@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Ex_cats" />
         <module name="ex_filler" />
+        <module name="Stringapplications" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ex_1" target="17" />
       <module name="helloworld" target="17" />
+      <module name="Stringapplications" target="17" />
       <module name="Workbook1d" target="17" />
     </bytecodeTargetLevel>
   </component>
