@@ -11,7 +11,7 @@ public class MathApp {
         double Garysalary = 1232144;
 
         double highestsalary = Math.max(Bobsalary, Garysalary);
-        System.out.println("The highest salary between Gary and Bob is $" + highestsalary);
+        System.out.println(" :o The highest salary between Gary and Bob is $" + highestsalary);
 
         double Truckprice = 54769.12;
         double carprice = 65492.86;
