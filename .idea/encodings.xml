@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Workbook1/Ex_Calclator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Workbook1/Ex_Calclator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Workbook1/Ex_cats/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Workbook1/Ex_cats/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Workbook1/Excercise2-operators/src/main/java" charset="UTF-8" />
