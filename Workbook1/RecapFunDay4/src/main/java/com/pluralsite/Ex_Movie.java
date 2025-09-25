@@ -21,13 +21,16 @@ public class Ex_Movie {
         double Pizza_Total = Pizzaperprice * (Number_of_Friends + 1);
         System.out.println("The Price for pizza was $" + Pizza_Total);
         double roundedPizzaprice = Math.round(Pizza_Total);
-        System.out.println("rounded price is about " + roundedPizzaprice);
+        System.out.println("rounded price is about $" + roundedPizzaprice);
 
         if(roundedPizzaprice > 30) System.out.println("Whoa, that's a lot of pizza! 🍕");
         else System.out.println("Nice budget-friendly movie night!");
 
         double drinkprice = 3.49;
-
-
+        double drinktotal = drinkprice * (Number_of_Friends+1);
+        double Overalltotal = drinktotal + Pizza_Total;
+        System.out.println("The total for pizza and drinks is $" + Math.round(Overalltotal));
+        String.format(Movie_title);
+        System.out.println("Movie|" + Movie_title + "Movie|" + Movie_title + "Movie|" + Movie_title + "Movie|" + Movie_title + );
     }
 }
