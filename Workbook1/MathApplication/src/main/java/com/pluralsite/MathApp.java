@@ -20,8 +20,9 @@ public class MathApp {
         double Radius = 23.3;
         double AreaofCircle = Math.PI * (Radius * Radius);
         System.out.println("The area of a circle with a radius of " + Radius + "inches is "+ AreaofCircle);
-        double variable1 =
-
+        //4. Find and display the square root a variable after it is set to 5.0
+        double presquarevariable = 64;
+                double root = Math.sqrt()
 
 
 
