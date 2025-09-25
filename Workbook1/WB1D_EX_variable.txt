@@ -1,0 +1,22 @@
+a vehicle identification number in the range 1000000 - 9999999
+● a vehicle make /model (i.e. Ford Explorer)
+● a vehicle color
+● whether the vehicle has a towing package
+● an odometer reading
+● a price
+● a quality rating (A, B, or C)
+● a phone number
+● a social security number
+● a zip code
+
+
+1. int
+2. string
+3. string
+4. boolean
+5. int
+6.float
+7.char
+8.double/int
+9. int/string
+10.byte/int
