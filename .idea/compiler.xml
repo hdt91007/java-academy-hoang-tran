@@ -10,6 +10,7 @@
         <module name="ex_filler" />
         <module name="Ex_cats" />
         <module name="Stringapplications" />
+        <module name="CodeTesting" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
