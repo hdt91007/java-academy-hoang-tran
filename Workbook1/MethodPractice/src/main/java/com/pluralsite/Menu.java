@@ -11,6 +11,8 @@ public static void DisplayMenu () {
 }
     public static void main(String[] args) {
     DisplayMenu();
+        DisplayMenu();
+
     }
 
 
