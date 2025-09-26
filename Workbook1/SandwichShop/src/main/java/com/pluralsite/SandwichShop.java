@@ -3,10 +3,11 @@ package com.pluralsite;
 import java.util.Scanner;
 
 public class SandwichShop {
+    public static double discount = 0;
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        double discount = 0;
         double price = 0;
 
         System.out.println("Type if you would want a Small sandwich or Large sandwich");
@@ -37,6 +38,7 @@ public class SandwichShop {
         }
 
     //Why doesnt this work *else if (SandwichSize == "Large")*
+        if (SandwichSize == "Large")
         else if (SandwichSize.equals("Large")) {
             if (loaded.equals("Yes"))
             {
