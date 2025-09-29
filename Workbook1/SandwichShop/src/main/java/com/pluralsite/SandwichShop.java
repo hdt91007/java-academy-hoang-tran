@@ -38,8 +38,7 @@ public class SandwichShop {
         }
 
     //Why doesnt this work *else if (SandwichSize == "Large")*
-        if (SandwichSize == "Large")
-        else if (SandwichSize.equals("Large")) {
+        if (SandwichSize == "Large")else if (SandwichSize.equals("Large")) {
             if (loaded.equals("Yes"))
             {
                 price = 10.70;
