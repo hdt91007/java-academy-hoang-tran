@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1b89b3-7faf-43b0-8a78-46a37b15acc7" name="Changes" comment="reformating">
-      <change afterPath="$PROJECT_DIR$/../../RemseyDemo/StringArraysEx/src/main/java/com/pluralsite/StringArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workbook1/Financial_Calculator/src/main/java/com/pluralsite/Testing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Workbook1/Financial_Calculator/src/main/java/com/pluralsite/FutureCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Workbook1/Financial_Calculator/src/main/java/com/pluralsite/MoragageCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook1/Financial_Calculator/src/main/java/com/pluralsite/MoragageCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbook1/Financial_Calculator/src/main/java/com/pluralsite/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook1/Financial_Calculator/src/main/java/com/pluralsite/Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +47,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.FutureCalculator.executor&quot;: &quot;Run&quot;,
     &quot;Application.MoragageCalculator.executor&quot;: &quot;Run&quot;,
     &quot;Application.Testing.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
@@ -123,8 +124,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../Workbook1/Financial_Calculator/src/main/java/com/pluralsite/MoragageCalculator.java</url>
-          <line>31</line>
+          <line>45</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../Workbook1/Financial_Calculator/src/main/java/com/pluralsite/FutureCalculator.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

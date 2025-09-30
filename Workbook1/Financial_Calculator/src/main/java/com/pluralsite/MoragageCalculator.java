@@ -17,14 +17,28 @@ public class MoragageCalculator {
         double time  = scanner.nextFloat();
 
         double months = time * 12;
-        double minterest = interest/12;
+        double deci_interest = interest/100/12;
 
 
+        double morage = loan *deci_interest* (Math.pow((1+deci_interest),(time*12)))/(Math.pow((1+deci_interest),(time*12))-1);
+        double interesttotal = morage*months - loan;
+        //Monly payment  = Principl/down × (annual interest * (1 + annual interest )^number of monthly payments / ( (1 + annual interest)^number of monthly payments ) - 1)
 
-        double morage =  loan * Math.pow( (minterest * (1 + minterest)), months) / Math.pow((1 + minterest),months ) - 1;
+        System.out.println("A $"+ loan+" loan at "+ interest+ "% interest for "+time+" years would have a $"+ (Math.round(morage*100))/100 + "/mon with a total interest of $"+ (Math.round(interesttotal*100))/100);
 
 
-        System.out.println("A $"+ loan+" loan at "+ ((Math.round(interest*100)))/100 +"% interest for "+time+" years would have a $"+morage+ "/mon with a total interest of $");
+//      asdom
+
+         //
+         //
+         //
+         //
+         //
+         //
+         //
+         //
+         //
+         //
 
 
 
@@ -48,7 +62,7 @@ public class MoragageCalculator {
 //Example: A $53,000 loan at 7.625% interest for 15 years would
 //have a $495.09/mo payment with a total interest of $36,115.99
 //This calculator would use a compounded interest formula.
-//M = P × (i * (1 + i )^n / ( (1 + i)^n ) - 1)
+//Monly payment  = Principl/down × (annual interest * (1 + annual interest )^number of monthly payments / ( (1 + annual interest)^number of monthly payments ) - 1)
 //        • Monthly Payment (M) =
 //o Principal (P):
 //        - This is the total amount of the loan.
@@ -62,3 +76,4 @@ public class MoragageCalculator {
 //o Monthly Interest Rate (i):
 //        - This is the annual interest rate divided by 12, i.e. r/12
 //        • Total Interest = (M×n)−P
+//
