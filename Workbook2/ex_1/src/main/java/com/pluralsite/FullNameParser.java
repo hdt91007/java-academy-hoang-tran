@@ -1,6 +1,5 @@
 package com.pluralsite;
 
-import javax.security.auth.Subject;
 import java.util.Scanner;
 
 public class FullNameParser {
@@ -13,10 +12,33 @@ public class FullNameParser {
 
         int Space =Fullname.indexOf(" ");
         System.out.println(Space);
-        String Fullname2 =Fullname.substring(5);
         String First = Fullname.substring(0,Space);
 
-        System.out.println(First);
-    //    Fullname.substring();
+        Fullname =Fullname.substring(Space);
+        String Second = Fullname.substring(0 ,Space);
+        Fullname =Fullname.substring(Space);
+
+
+        String Third = Fullname;
+        int factor = Third.length();
+        System.out.println(factor);
+        if (factor == 0){
+            System.out.println("First name is " +First.trim() );
+            System.out.println("Last name is " + Second.trim() );
+
+        }
+
+
+            else{
+
+
+            System.out.println("First name is " + First.trim());
+            System.out.println("Middle name is " + Second.trim());
+            System.out.println("Last name is " + Third.trim());
+        }
+
+
+
+
     }
 }
