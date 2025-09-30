@@ -2,8 +2,8 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://C:/java academy hoang tran/RemseyDemo/loop excercise">
-      <sourceFolder url="file://C:/java academy hoang tran/RemseyDemo/loop excercise/src" isTestSource="false" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" packagePrefix="com.pluralsite" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
