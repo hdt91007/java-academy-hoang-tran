@@ -1,19 +1,12 @@
 package com.pluralsite;
 
+import javax.lang.model.element.VariableElement;
 import java.util.Scanner;
+
 
 
 public class FullNameGenerator {
 
-
-
-
-//    public void Captialize (String word) {
-//        word.toLowerCase();
-//        String firstLetter = word.substring(0,1).toUpperCase();
-//        String otherletters = word.substring(1).toLowerCase();
-//        String Capital = firstLetter + otherletters;
-//    }
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

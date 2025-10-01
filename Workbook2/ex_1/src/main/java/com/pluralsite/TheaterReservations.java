@@ -13,18 +13,25 @@ public class TheaterReservations {
         System.out.println("Please enter your name below");
         String Names = scan.nextLine();
         //Use Name parser to reform
+        FullNameParser parser = new FullNameParser();
+        parser.LastnameFirstnameFormat(Names);
 
+        //Needs more work to get date format working
         System.out.println("What date do you want to reserve in (MM/dd/yyyy) format");
         String Date = scan.nextLine();
-        //Date = DateTimeFormatter.ofPattern(" MMM dd yyyy");
+        DateTimeFormatter.ofPattern(Date);
+        System.out.println(Date);
+
 
         System.out.println("How many ticket would you like?");
         int tickets = scan.nextInt();
 
+        if (tickets == 1) {
+            System.out.println(tickets + " ticket reserved for " + Date + " under " + Names);
+        } else {
+            System.out.println(tickets + " tickets reserved for " + Date + " under " + Names);
 
 
-
-
-
+        }
     }
-    }
+}

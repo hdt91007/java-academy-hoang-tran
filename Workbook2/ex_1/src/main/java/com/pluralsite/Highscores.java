@@ -1,6 +1,5 @@
 package com.pluralsite;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Highscores {
@@ -18,11 +17,11 @@ public class Highscores {
         System.out.println(team1.trim());
         MatchHistory = MatchHistory.substring(MatchHistory.indexOf(":"));
 
-        String team2 = MatchHistory.substring(0 + 1, MatchHistory.indexOf("|"));
+        String team2 = MatchHistory.substring(1, MatchHistory.indexOf("|"));
         System.out.println(team2.trim());
         MatchHistory = MatchHistory.substring(MatchHistory.indexOf("|"));
 
-        String score1 = MatchHistory.substring(0 + 1, MatchHistory.indexOf(":"));
+        String score1 = MatchHistory.substring(1, MatchHistory.indexOf(":"));
         System.out.println(score1.trim());
         MatchHistory = MatchHistory.substring(MatchHistory.indexOf(":"));
 
