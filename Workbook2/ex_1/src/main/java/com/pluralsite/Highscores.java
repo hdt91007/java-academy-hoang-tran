@@ -10,8 +10,8 @@ public class Highscores {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("PLease input the teams and scores in the following format Team1:Team2|Score1:Score2 ");
-        //String MatchHistory = scan.nextLine();
-        String MatchHistory = "Forgs:Bulls|12:9";
+        String MatchHistory = scan.nextLine();
+        //String MatchHistory = "Forgs:Bulls|12:9";
         System.out.println(MatchHistory);
 
         String team1 = MatchHistory.substring(0, MatchHistory.indexOf(":"));
@@ -29,10 +29,12 @@ public class Highscores {
         String score2 = MatchHistory.substring(MatchHistory.indexOf(":") + 1);
         System.out.println(score2.trim());
 
-
-        MatchHistory = "Forgs:Bulls|12:9";
-        String[] info = MatchHistory.split("|");
-        System.out.println(MatchHistory);
-
+        if (Integer.parseInt(score1) > Integer.parseInt(score2)) {
+            System.out.println(team1 + " wins");
+        }
+        else if (Integer.parseInt(score1) < Integer.parseInt(score2)){
+            System.out.println(team2 + " wins");
+        }
+        else System.out.println("Game was a tie");
     }
 }
