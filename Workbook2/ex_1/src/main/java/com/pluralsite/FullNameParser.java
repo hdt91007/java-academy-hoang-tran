@@ -33,8 +33,20 @@ public class FullNameParser {
 //            System.out.println("Middle name is " + Second.trim());
 //            System.out.println("Last name is " + Third.trim());
 //        }
+        String Fullname = "Hoang Dien Tran";
+        String[] Subname = Fullname.split(" ");
+       System.out.println(Subname[0]+Subname[1]+Subname[2]);
+        if (Subname[2].isEmpty()) {
+            System.out.println("First name is " + Subname[0].trim());
+            System.out.println("Last name is " + Subname[1].trim());
+        }
 
 
+        else {
+            System.out.println("First name is " + Subname[0].trim());
+            System.out.println("Middle name is " +Subname[1].trim());
+           System.out.println("Last name is " + Subname[2].trim());
+        }
     }
 
         public static void LastnameFirstnameFormat(String word) {

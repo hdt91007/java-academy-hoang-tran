@@ -1,5 +1,7 @@
 package com.pluralsite;
 
+import java.text.DateFormat;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
@@ -19,9 +21,11 @@ public class TheaterReservations {
         //Needs more work to get date format working
         System.out.println("What date do you want to reserve in (MM/dd/yyyy) format");
         String Date = scan.nextLine();
-        DateTimeFormatter.ofPattern(Date);
-        System.out.println(Date);
+        java.time.format.DateTimeFormatter DateFormat;
+        DateFormat = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        LocalDate.parse(Date, DateFormat);
 
+        System.out.println(Date);
 
         System.out.println("How many ticket would you like?");
         int tickets = scan.nextInt();
