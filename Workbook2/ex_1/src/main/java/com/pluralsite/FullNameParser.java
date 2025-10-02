@@ -1,9 +1,9 @@
 package com.pluralsite;
 
-import java.util.Scanner;
+
 
 public class FullNameParser {
-   public static void main(String[] args) {
+   public static void Parse () {
 
 //        Scanner Scan = new Scanner(System.in);
 //        System.out.println("Please input either your First and Last name or you First Middle and Last name");
@@ -49,8 +49,8 @@ public class FullNameParser {
         }
     }
 
-        public static void LastnameFirstnameFormat(String word) {
-
+        public static String LastnameFirstnameFormat(String word) {
+            String LastFirstFormat ="";
             int Space = word.indexOf(" ");
             String First = word.substring(0, Space);
 
@@ -62,15 +62,14 @@ public class FullNameParser {
             String Third = word;
             int factor = Third.length();
             if (factor == 0) {
-                System.out.println(Second.trim() + ", "+ First.trim());
+                 LastFirstFormat = Second.trim() + ", "+ First.trim();
             } else {
 
-                System.out.println(Third.trim() + ", "+ Second.trim()+" "+ First.trim());
-
-
+                LastFirstFormat = Third.trim() + ", "+ Second.trim()+" "+ First.trim();
 
             }
-
+            System.out.println(LastFirstFormat);
+            return LastFirstFormat;
         }
 
 
