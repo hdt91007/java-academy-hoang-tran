@@ -13,7 +13,7 @@ public class Main {
         //StringBuilder Billinginfo = new StringBuilder();
 
         System.out.println("Please provide your Name");
-        Shippinginfo.append(scan.nextLine().+"\n \n");
+        Shippinginfo.append(scan.nextLine()+"\n \n");
         System.out.println("Please provide your Shipping Street");
         Shippinginfo.append("Shipping Address: \n"+ scan.nextLine() + "\n");
 
