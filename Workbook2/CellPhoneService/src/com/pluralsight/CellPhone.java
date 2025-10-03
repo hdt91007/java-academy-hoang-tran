@@ -7,6 +7,7 @@ public class CellPhone {
     private String Carrier;
     private String phonNumber;
     private String owner;
+    private String newNumber;
 
 
     //Construct parameter
@@ -16,6 +17,7 @@ public class CellPhone {
         this.Carrier = para_Carrier;
         this.phonNumber = para_phonNumber;
         this.owner = para_owner;
+        String para_newNumber;
 
 
     }
@@ -59,6 +61,10 @@ public class CellPhone {
 
     public void setOwner(String para_owner) {
         this.owner = para_owner;
+    }
+
+    public void dial (String para_newNumber){
+        System.out.println(getOwner()+ " is calling "+ para_newNumber);
     }
 }
 

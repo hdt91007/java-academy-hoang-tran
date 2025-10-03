@@ -35,7 +35,12 @@ public class CellPhoneApplication {
                 "- owner = " + tomphone.getOwner() + "\n"
         );
 
+        CellPhone Banana = new CellPhone(42346,"iphone14", "Verizon","408-234-2750","Bobert");
 
+        CellPhone Orange = new CellPhone(59876,"iphone13", "T mobile","906-324-7804","Oscar");
+
+        Banana.dial(Orange.getPhonNumber());
+        Orange.dial(Banana.getPhonNumber());
 
 
 
