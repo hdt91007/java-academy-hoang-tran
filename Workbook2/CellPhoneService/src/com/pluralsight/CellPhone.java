@@ -1,13 +1,14 @@
 package com.pluralsight;
 
 public class CellPhone {
-
+// properties
     int SerialNumber;
     private String model;
     private String Carrier;
     private String phonNumber;
     private String owner;
     private String newNumber;
+
 
 
     //Construct parameter
