@@ -35,16 +35,19 @@ public class CellPhoneApplication {
 //                "- owner = " + tomphone.getOwner() + "\n"
 //        );
 
-        CellPhone Banana = new CellPhone(42346, "iphone14", "Verizon", "408-234-2750", "Bobert");
+        CellPhone Banana = new CellPhone("Ando", 1234, "Verizon", "408-234-2750", "Bobert");
 
-        CellPhone Orange = new CellPhone(59876, "iphone13", "T mobile", "906-324-7804", "Oscar");
+        CellPhone Orange = new CellPhone("Verision", "132-166-7869","Gilber");
 
+        CellPhone Green = new CellPhone("Arlet", 125344, "Verizon", "408-234-3250", "AJ");
         Banana.dial(Orange.getPhonNumber());
         Orange.dial(Banana.getPhonNumber());
-
+        Banana.dial(Banana);
         display(Banana);
         display(Orange);
-
+        display(Green);
+        Orange.dial(Green);
+        Green.dial(Orange);
     }
 
     public static void display(CellPhone phone)  {
@@ -54,6 +57,7 @@ public class CellPhoneApplication {
                 "- carrier = " + phone.getCarrier() + "\n" +
                 "- phoneNumber = " + phone.getPhonNumber() + "\n" +
                 "- owner = " + phone.getOwner() + "\n");
+
 
     }
 }
