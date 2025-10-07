@@ -8,7 +8,7 @@ public class Employee {
 
     private int employeeid;
     private String name;
-    private int hoursWorked;
+    private double hoursWorked;
     private double payRate;
     private double grosspay;
 
@@ -20,7 +20,7 @@ public class Employee {
         this.employeeid = employeeid;
     }
 
-    public int getHoursWorked() {
+    public double getHoursWorked() {
         return hoursWorked;
     }
 
@@ -45,10 +45,10 @@ public class Employee {
     }
 
     public void getgrosspay() {
-        this.grosspay = payRate * hoursWorked;
+        this.grosspay = this.payRate * this.hoursWorked;
     }
 
-    public Employee(int employeeid, String name, int hoursWorked, double payRate) {
+    public Employee(int employeeid, String name, double hoursWorked, double payRate, double grosspay) {
         this.employeeid = employeeid;
         this.name = name;
         this.hoursWorked = hoursWorked;
@@ -57,6 +57,19 @@ public class Employee {
 
     }
 
-        }
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "employeeid=" + employeeid +
+                ", name='" + name + '\'' +
+                ", hoursWorked=" + hoursWorked +
+                ", payRate=" + payRate +
+                ", grosspay=" + hoursWorked*payRate +
+                '}';
+    }
+
+}
+
+
 
 
