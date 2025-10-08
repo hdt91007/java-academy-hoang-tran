@@ -1,9 +1,8 @@
 package com.netflix;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import java.io.*;
 import java.net.URL;
+import java.nio.file.attribute.FileAttribute;
 
 public static void ReadCSVFIle(String _filename) {
     // Load the CSV file from the 'resources' folder using the class loader
@@ -17,9 +16,8 @@ public static void ReadCSVFIle(String _filename) {
 
     // Create a File object using the path from the resource URL
     File file = new File(resource.getFile());
-
     // Try-with-resources: Automatically closes the reader when done
-    try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+    try (BufferedReader reader = new BufferedReader(new FileReader(""))) {
 
         //     String[] names = { "Hoang", "Anthony","Zak"};
         //  System.out.println(names[0]);
@@ -30,13 +28,17 @@ public static void ReadCSVFIle(String _filename) {
 
 
             //creating variables --> Clear name of what each part is
-            int id = Integer.parseInt (data[0]);
+            int id = Integer.parseInt(data[0]);
             String name = data[1];
             double hours = Double.parseDouble(data[2]);
             double payrate = Double.parseDouble(data[3]);
             double  =
 
-                 System.out.println(id);
+            System.out.println(id);
+        }
+        catch(IOException e){
+            throw new RuntimeException(e);
+        }
 ///System.out.println(id);
             // What do I want to print
 
@@ -48,7 +50,6 @@ public static void ReadCSVFIle(String _filename) {
             // System.out.println(data[3]);
 
 
-
 //StringSystem.out.println(id); // 10
             // System.out.println(line.split(|)); // Print each line (CSV row) to the console
-
+}
