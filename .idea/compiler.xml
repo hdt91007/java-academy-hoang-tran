@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Ex_Calclator" />
-        <module name="ex_filler" />
         <module name="SandwichShop" />
         <module name="Ex_cats" />
-        <module name="Stringapplications" />
+        <module name="APT" />
         <module name="CodeTesting" />
+        <module name="ex_filler" />
+        <module name="Stringapplications" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
