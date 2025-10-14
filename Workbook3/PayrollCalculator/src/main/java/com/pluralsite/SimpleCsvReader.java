@@ -13,7 +13,7 @@ public class SimpleCsvReader {
     ReadCSVFIle("Payroll.CSV");
 
     }
-    public static void ReadCSVFIle(String _filename) {
+        public static void ReadCSVFIle(String _filename) {
             // Load the CSV file from the 'resources' folder using the class loader
             URL resource = SimpleCsvReader.class.getClassLoader().getResource(_filename);
 
