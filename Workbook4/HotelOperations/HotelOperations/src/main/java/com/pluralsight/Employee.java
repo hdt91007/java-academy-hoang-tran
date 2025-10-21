@@ -1,7 +1,10 @@
 package com.pluralsight;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+
 public class Employee {
-    private Double employeeId;
+    private int employeeId;
     private String name;
     private String department;
     private Double payRate;
@@ -11,7 +14,7 @@ public class Employee {
     private Double Otpay;
     private double normalpay;
 
-    public Employee(Double employeeId, String name, String department, Double payRate) {
+    public Employee(int employeeId, String name, String department, Double payRate) {
         this.employeeId = employeeId;
         this.name = name;
         this.department = department;
@@ -20,11 +23,11 @@ public class Employee {
     }
 
 
-    public Double getEmployeeId() {
+    public int getEmployeeId() {
         return employeeId;
     }
 
-    public void setEmployeeId(Double employeeId) {
+    public void setEmployeeId(int employeeId) {
         this.employeeId = employeeId;
     }
 
@@ -85,7 +88,24 @@ public class Employee {
         else { this.normalpay = payRate * getRegularhours(); }
 
             return Otpay + normalpay;
+
         }
+
+        public double setpunchin(Double clockInTime) {
+        return clockInTime;
+        }
+
+    public double setpunchout(Double clockOutTime) {
+        return clockOutTime;
+    }
+    public double setpunchout() {
+        LocalTime.now().format();
+        return clockOutTime;
+    }
+    public void punchTimeCard (Double clockInTime,Double clockOutTime){
+        Double Dailyhours = clockOutTime-clockInTime;
+        hoursWorked = hoursWorked + Dailyhours;
+    }
 
     }
 

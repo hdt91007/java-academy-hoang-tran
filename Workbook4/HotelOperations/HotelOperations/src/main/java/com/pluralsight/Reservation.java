@@ -7,7 +7,8 @@ public class Reservation {
     private Double Price;
     private int NumberOfNights;
     private boolean isWeekend;
-    private double Reservationtotal;
+
+
 
     public String getRoomType() {
         return RoomType;
@@ -50,7 +51,7 @@ public class Reservation {
 
     public double getReservationtotal() {
         if (isWeekend() == true) {
-            this.Price = this.Price * 1.10;
+            this.Price = this.Price * 1.10*getNumberOfNights();
         }
         return Price;
     }
