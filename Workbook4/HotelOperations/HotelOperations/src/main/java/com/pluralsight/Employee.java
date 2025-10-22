@@ -1,5 +1,8 @@
 package com.pluralsight;
 
+import java.sql.SQLOutput;
+import java.text.DecimalFormat;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -13,6 +16,7 @@ public class Employee {
     private Double regularHoursWorked;
     private Double Otpay;
     private double normalpay;
+    DecimalFormat df = new DecimalFormat("0.00");
 
     public Employee(int employeeId, String name, String department, Double payRate) {
         this.employeeId = employeeId;
@@ -99,12 +103,18 @@ public class Employee {
         return clockOutTime;
     }
     public double setpunchout() {
-        LocalTime.now().format();
-        return clockOutTime;
+        int currentmin = LocalTime.now().getMinute();
+        int currenthour = LocalTime.now().getHour();
+
+
+        double v = ((double) currentmin / 60) + currenthour;
+          v = Double.parseDouble(df.format(v));
+        return v;
     }
     public void punchTimeCard (Double clockInTime,Double clockOutTime){
+
         Double Dailyhours = clockOutTime-clockInTime;
-        hoursWorked = hoursWorked + Dailyhours;
+        this.hoursWorked = this.hoursWorked + Dailyhours;
     }
 
     }

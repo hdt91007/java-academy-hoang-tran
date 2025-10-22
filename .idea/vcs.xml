@@ -3,5 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Workbook3/BedtimeStories" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Workbook3/Capstone-Movies" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Workbook3/Capstone-Moviesfull" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Workbook3/New folder/Capstone-Moviesfull" vcs="Git" />
   </component>
 </project>

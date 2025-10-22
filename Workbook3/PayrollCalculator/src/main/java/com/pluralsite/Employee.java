@@ -64,7 +64,7 @@ public class Employee {
                 ", name='" + name + '\'' +
                 ", hoursWorked=" + hoursWorked +
                 ", payRate=" + payRate +
-                ", grosspay=" + hoursWorked*payRate +
+                ", grosspay=" + hoursWorked * payRate +
                 '}';
     }
 

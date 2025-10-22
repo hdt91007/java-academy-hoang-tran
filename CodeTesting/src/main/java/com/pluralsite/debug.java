@@ -20,3 +20,27 @@ public class debug {
                 }
             }
         }
+//date time description vendor amount formate
+//todo Make a CLI application
+//todo track financial in and out
+
+
+//prompt what they want to do
+
+// D for deposit
+// ask for date,time,description,vendor amount
+// take all the information then add it into txt
+
+
+// L Ledger
+
+//P Make payment
+//filter through information for negative value
+//after selecting
+
+
+//Sort ledger by most recent datetimeformat
+//Ask for key values to examine All, Deposits,Payments, Or sub search for values
+// Filter out all values leaving Deposits
+//Filter out all values leaving Payments
+//Filer out all values leaving  Everythign

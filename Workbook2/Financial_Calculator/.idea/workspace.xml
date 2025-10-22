@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1b89b3-7faf-43b0-8a78-46a37b15acc7" name="Changes" comment="Future Calculator draft and Morgage calculator review and edits">
+      <change beforePath="$PROJECT_DIR$/../../CodeTesting/src/main/java/com/pluralsite/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CodeTesting/src/main/java/com/pluralsite/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CodeTesting/src/main/java/com/pluralsite/debug.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CodeTesting/src/main/java/com/pluralsite/debug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CodeTesting/src/main/java/com/pluralsite/push and pull stuff" beforeDir="false" afterPath="$PROJECT_DIR$/../../CodeTesting/src/main/java/com/pluralsite/push and pull stuff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../New folder/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RemseyDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RemseyDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbook3/PayrollCalculator/src/main/java/com/pluralsite/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook3/PayrollCalculator/src/main/java/com/pluralsite/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbook3/PayrollCalculator/src/main/java/com/pluralsite/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook3/PayrollCalculator/src/main/java/com/pluralsite/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/hdt91007/java-academy-hoang-tran&quot;,
-    &quot;accountId&quot;: &quot;9f62874b-81e1-465d-9b83-7a4a5bdf9c4e&quot;
+    &quot;accountId&quot;: &quot;d9e83e03-bf2b-422b-8a44-d3c70c0d6c83&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -122,6 +129,17 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reformating" />
