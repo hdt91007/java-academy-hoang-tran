@@ -11,7 +11,7 @@ public class Main {
 //        System.out.println(24*1.5*60);
 //        Reservation Wellot = new Reservation();
 //        Wellot.getReservationtotal();
-        System.out.println(Josh.setpunchout());
+        System.out.println(Josh.setpunchin());
 
         }
     }

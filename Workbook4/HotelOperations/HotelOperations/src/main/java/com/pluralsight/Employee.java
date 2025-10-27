@@ -17,6 +17,16 @@ public class Employee {
     private Double Otpay;
     private double normalpay;
     DecimalFormat df = new DecimalFormat("0.00");
+    private double punchin;
+    private double punchout;
+
+    public double getPunchin() {
+        return punchin;
+    }
+
+    public double getPunchout() {
+        return punchout;
+    }
 
     public Employee(int employeeId, String name, String department, Double payRate) {
         this.employeeId = employeeId;
@@ -96,19 +106,26 @@ public class Employee {
         }
 
         public double setpunchin(Double clockInTime) {
-        return clockInTime;
-        }
 
+            this.punchin = clockInTime;
+            return clockInTime;
+        }
+    public double setpunchin() {
+        int currentmin = LocalTime.now().getMinute();
+        int currenthour = LocalTime.now().getHour();
+        double v = ((double) currentmin / 60) + currenthour;
+        this.punchin = Double.parseDouble(df.format(v));
+        return punchin;
+    }
     public double setpunchout(Double clockOutTime) {
+        this.punchout = clockOutTime;
         return clockOutTime;
     }
     public double setpunchout() {
         int currentmin = LocalTime.now().getMinute();
         int currenthour = LocalTime.now().getHour();
-
-
         double v = ((double) currentmin / 60) + currenthour;
-          v = Double.parseDouble(df.format(v));
+          punchout = Double.parseDouble(df.format(v));
         return v;
     }
     public void punchTimeCard (Double clockInTime,Double clockOutTime){
